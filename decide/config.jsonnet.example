@@ -7,7 +7,7 @@ local port = "8000";
 local db = {
     name: "decide",
     user: "decide",
-    password: "complexpassword",
+    password: "decide",
 };
 
 {
