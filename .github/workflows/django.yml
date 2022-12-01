@@ -49,5 +49,5 @@ jobs:
     - name: Codacy Coverage Reporter
       uses: codacy/codacy-coverage-reporter-action@v1
       with:
-          project-token: 1e139c9aef0d4d75a5c447a3d4d80941 #WrdxjpYlicjIFgNn0lrM clave general de mi cuenta, por si hace falta
+          project-token: 1e139c9aef0d4d75a5c447a3d4d80941
           coverage-reports: decide/coverage.xml 
