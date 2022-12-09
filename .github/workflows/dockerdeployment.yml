@@ -1,7 +1,0 @@
-name: Docker deployment
-
-on: [push]
-
-runs:
-  using: 'docker'
-  image: 'Dockerfile'
