@@ -33,10 +33,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         cp decide/local_settings.gactions.py decide/local_settings.py
-    - name: Run migrations (unnecessary)
-      run: |
-        cd decide
-        python manage.py migrate
 
     - name: docker login
       env:
