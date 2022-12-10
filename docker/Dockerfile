@@ -4,8 +4,6 @@ RUN apk add --no-cache git postgresql-dev gcc libc-dev
 RUN apk add --no-cache gcc g++ make libffi-dev python3-dev build-base
 
 RUN pip install gunicorn
-RUN pip install setuptools
-RUN pip install wheel
 RUN pip install psycopg2
 RUN pip install ipdb
 RUN pip install ipython
