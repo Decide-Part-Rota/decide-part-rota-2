@@ -1,4 +1,4 @@
-from ubuntu:22.04
+from python:alpine
 
 RUN apk add --no-cache git postgresql-dev gcc libc-dev
 RUN apk add --no-cache gcc g++ make libffi-dev python3-dev build-base
