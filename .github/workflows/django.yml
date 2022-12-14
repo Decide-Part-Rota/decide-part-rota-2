@@ -51,17 +51,5 @@ jobs:
       with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
           coverage-reports: decide/coverage.xml
-
-    - name: docker login
-      env:
-        DOCKER_USER: ${{secrets.DOCKER_USER}}
-        DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
-      run:
-        docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
-    - name: Build the Docker image
-      run: docker build . --file docker/Dockerfile --tag chamodshehanka/node-test:$(date +%s)
-
-    - name: Docker Push
-      run: docker push ${{secrets.DOCKER_USER}}/decide-part-rota
     
     
