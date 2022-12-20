@@ -39,7 +39,7 @@ class Navbar extends React.Component {
         create(
           "a",
           {className:"cta", href: "/"}, 
-          create('button',{type: "submit" }, "Log In"),
+          create('button',{type: "submit" }, "Este es el cambio"),
         ),
       );
     }
